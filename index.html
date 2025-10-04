@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Todo List</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+  <!-- Astronout Animation Zone -->
+  <img src="Astronot.gif" class="flying-ast" alt="Flying Astronot">
+
+  <!-- Background stars -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <!-- Judul -->
+  <section class="todo-app">
+    <h1 class="text-3xl font-bold mb-4">Todo List</h1>
+    
+    <!-- Form Section -->
+    <section class="todo-form">
+      <input type="text" id="taskInput" placeholder="Add a cosmic task"     class="border border-purple-400 rounded-lg px-3 py-2 bg-black/30 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+      <input type="date" id="dateInput" max="2025-12-31"     class="border border-purple-400 rounded-lg px-3 py-2 bg-black/30 text-white placeholder-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500">
+      <button id="addBtn" class="rocket-btn">🚀</button>
+    </section>
+
+    <!-- Actions Button -->
+    <section class="todo-actions">
+      <button id="filterBtn">Filter</button>
+      <button id="deleteAllBtn">Delete All</button>
+    </section>
+
+    <!-- Todo List Section -->
+     <section class="todo-list">
+      <table>
+        <thead>
+          <tr>
+            <th>Task</th>
+            <th>Due Date</th>
+            <th>Status</th>
+            <th>Actions</th>      
+          </tr>
+        </thead>
+        <tbody id="todoList">
+          <tr><td colspan="4" class="empty">No stars (task) found ✨</td></tr>
+        </tbody>
+      </table>
+     </section>
+  </section>
+  <script src="js/script.js"></script>
+</body>
+</html>
