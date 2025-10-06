@@ -1,14 +1,60 @@
-/* ==== Galaxy Background ==== */
 body {
-  margin: 0;
   font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-  height: 100vh;
-  overflow: hidden;
-  color: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(circle at top, #1e1b4b, #0f172a);
+  color: white;
+}
+
+/* header */
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header p {
+  margin-top: 8px;
+  color: #c4b5fd; /* ungu muda */
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 0 6px #6366f1, 0 0 12px #9333ea; /* glow halus */
+}
+
+/* footer */
+.footer {
+  margin-top: 8px;
+  text-align: center;
+  padding: 15px 0;
+  background: rgba(15, 10, 38, 0.027);
+  backdrop-filter: blur(6px);
+  color: white;
+  box-shadow: 0 0 15px #4c1d95, 0 0 25px #312e81;
+  text-shadow: 0 0 10px rgba(99,102,241,0.6), 0 0 20px rgba(147,51,234,0.5);
+}
+
+.footer-link {
+  color: #a78bfa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-shadow: 0 0 10px #6366f1, 0 0 20px #9333ea;
+}
+
+/* main-content */
+.main-content {
+  flex: 1; /* biar isi mendorong footer ke bawah */
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 /* Stars layers */
@@ -32,7 +78,7 @@ body {
   background: rgba(15, 23, 42, 0.85);
   padding: 20px;
   border-radius: 15px;
-  width: 550px;
+  width: 768px;
   backdrop-filter: blur(5px);
   box-shadow: 0 0 25px rgba(137, 207, 240, 0.6);
   position: relative;
